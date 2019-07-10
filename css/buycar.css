@@ -1,0 +1,10 @@
+.buycar_content{
+  width: 100%;
+  height: 1250px;
+  background: rgb(245,245,245);
+  margin-left: auto;
+  margin-right: auto;
+  top: 30px;
+  position: absolute;
+}
+

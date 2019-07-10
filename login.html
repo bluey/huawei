@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<!-- Add your site or application content here -->
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+<div class="main">
+    <div class="topBar">
+        <ul class="topBarUl">
+            <li><a href="index.html" class="topBarA">首页</a></li>
+            <li><a href="#" class="topBarA">华为官网</a></li>
+            <li><a href="#" class="topBarA">荣耀官网</a></li>
+            <li><a href="#" class="topBarA">花粉俱乐部</a></li>
+            <li><a href="#" class="topBarA">V码(优购码)</a></li>
+            <li><a href="#" class="topBarA">企业购</a></li>
+            <li><a href="#" class="topBarA">Select Region</a></li>
+            <!--更多精彩下拉显示-->
+            <li class="dropdown" id="dropdown">更多精彩<img src="img/bottomdecoration.png">
+                <dl class="topBar-dropDown" id="topBar-dropdown">
+                    <dt><a href="#" class="topBarA">EMUI</a></dt>
+                    <dt><a href="#" class="topBarA">应用市场</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                </dl>
+            </li>
+        </ul>
+        <ul class="topBarUlRight">
+            <li><a href="login.html" class="topBarA">请登录</a></li>
+            <li><a href="regist.html" class="topBarA">注册</a></li>
+            <li><a href="mybook.html" class="topBarA">我的订单</a></li>
+            <li><a href="server.html" class="topBarA">客户服务</a></li>
+            <!--网站导航下拉显示Div-->
+            <li><a href="#" class="topBarA">网站导航</li>
+            <li><a href="#" class="topBarA">手机版</a></li>
+            <li class="buycarli" id="buycarli"><a href="buycar.html" class="topBarA"><img class="buycarimg" src="img/buycar.png">购物车</a></li>
+        </ul>
+    </div>
+    <div class="login_content" style="background: url(img/login_bg.jpg);background-repeat: no-repeat">
+        <p class="big_title">
+          缤纷服务 尽情纵享<br>
+          <span>成为会员，即可享受至尊服务，客服24小时在线，只为更好的为您提供服务</span>
+        </p>
+
+    </div>
+  <div class="login">
+    <p></p>
+    <form class="login_form" action="#" method="post">
+      <h2 style="text-align: center;margin-top: 20px;padding-bottom: 20px">用户登录</h2>
+      <input type="text" placeholder="请输入用户名" required="required" class="login_username"><br>
+      <span class="tips_username">*请输入字母开的9-16位用户名</span><br>
+      <input type="password" placeholder="请输入密码" required="required" class="login_password"><br>
+      <span class="tips_password">*请输入字6位以上的密码</span><br>
+      <input type="submit" class="submit" value="登 录" style="width: 250px;height: 40px;margin-top: 30px;color: white;background: rgb(207,44,10);">
+    </form>
+  </div>
+</div>
+</body>
+
+</html>

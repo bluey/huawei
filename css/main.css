@@ -1,0 +1,1011 @@
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * img, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0em 0;
+}
+
+
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+ul{list-style: none;}
+/*顶部广告----------------------------------------------------------------------------------------------------------*/
+.main{clear:both;}
+.topBanner{
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  background: rgb(1,4,19);
+  display: none;
+}
+.timmerlost{
+  color: ghostwhite;
+}
+.topBar{
+  width: 100%;
+  height: 2em;
+  background:rgb(240,240,240);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.topBarUl{
+  list-style: none;
+  margin-left: 7em;
+}
+
+.topBarUl li{
+  float: left;
+  color: #555555;
+  margin:0.5em;
+  font-size: 12px;
+}
+.topBarUl li a:link{
+  font-size: 12px;
+  color: #555555;
+  text-decoration:none
+}
+.topBarUl li a:visited{
+  font-size: 12px;
+  color: #555555;
+  text-decoration:none
+}
+.topBarUl li a:hover{
+   font-size: 12px;
+   color: crimson;
+  text-decoration:none
+ }
+.topBarUl li a:active{
+  font-size: 12px;
+  color: crimson;
+  text-decoration:none
+}
+.dropdown{
+  z-index: 100;
+}
+.topBar-dropDown{
+  text-align: left;
+  margin-top: 0.8em;
+  background: white;
+  padding:0.2em;
+  border-radius: 4px;
+  width: 10em;
+  display: none;
+  z-index: 100;
+  position: relative;
+  height: 8em;
+}
+.topBar-dropDown dt{
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.dropdown img{
+  width:1em;
+  height:1em;
+}
+
+dt{
+  padding-top: 0.2em;
+}
+.topBarUlRight{
+  list-style: none;
+  float: right;
+  margin-right: 7em;
+}
+.topBarUlRight li{
+  float: left;
+  color: #555555;
+  margin:0.5em;
+  font-size: 12px;
+}
+.topBarUlRight li a:link{
+  font-size: 12px;
+  color: #555555;
+  text-decoration:none
+}
+.topBarUlRight li a:visited{
+  font-size: 12px;
+  color: #555555;
+  text-decoration:none
+}
+.topBarUlRight li a:hover{
+  font-size: 12px;
+  color: crimson;
+  text-decoration:none
+}
+.topBarUlRight li a:active{
+  font-size: 12px;
+  color: crimson;
+  text-decoration:none
+}
+.buycarli img{
+  width:1em;
+  height:1em;
+  margin-right: 0.2em;
+}
+/*index导航栏样式-------------------------------------------------------------------------------------------------*/
+.index_bar{
+  background: white;
+  width: 100%;
+  height: 5em;
+  position: absolute;
+  padding-top: 0.5em;
+}
+.big_banner_ad{
+  position: relative;
+}
+.big_banner_left_bar{
+  width: 200px;
+  height: 440px;
+  border-radius: 8px;
+  background-color: rgb(252,253,254);
+  margin-left: 100px;
+  margin-top: 50px;
+  padding-top: 5px;
+  float: left;
+}
+.big_banner_left_bar ul{
+  list-style: none;
+  margin-left: 20px;
+}
+.left_bar_model{
+  width: 10em;
+  height: 4em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+}
+.big_banner_left_bar ul li{
+margin-top: 14px;
+}
+.left_bar_model_title{
+  color: #848484;
+}
+.left_bar_model_des{
+  color: #a6a6a6;
+  margin-top: 10px;
+}
+.left_bar_model_des a span{
+  font-size: 13px;
+}
+.left_bar_model_des a:link{
+  text-decoration:none;
+  color: #a6a6a6;
+}
+.left_bar_model_des a:visited{
+  text-decoration:none;
+  color: #a6a6a6;
+}
+.left_bar_model_des a:hover{
+  text-decoration:none;
+  color: rgb(207,10,44);
+}
+.left_bar_model_des a:active{
+  text-decoration:none;
+  color: rgb(207,10,44);
+}
+
+/*标题超链接样式----------------------------------------------------------------------------------------------------*/
+
+.left_bar_model a:link{
+  text-decoration:none;
+  color: #a6a6a6;
+}
+.left_bar_model a:visited{
+  text-decoration:none;
+  color: #a6a6a6;
+}
+.left_bar_model a:hover{
+  text-decoration:none;
+  color: rgb(207,10,44);
+}
+.left_bar_model a:active{
+  text-decoration:none;
+  color: rgb(207,10,44);
+}
+/*标题超链接样式*/
+a .left_bar_model_title:link{
+  text-decoration:none;
+  color: #848484;
+}
+a .left_bar_model_title:visited{
+  text-decoration:none;
+  color: #848484;
+}
+a .left_bar_model_title:hover{
+  text-decoration:none;
+  color: rgb(207,10,44);
+}
+a .left_bar_model_title:active{
+  text-decoration:none;
+  color: rgb(207,10,44);
+}
+/*首页导航栏-------------------------------------------------------------------------------------------------------*/
+.index_bar{
+  width: 100%;
+  height: 50px;
+
+}
+.index_bar ul{
+list-style: none;
+margin-top: 1em;
+  margin-left: 6em;
+}
+  .index_bar ul li{
+  float: left;
+  margin-left: 20px;
+  }
+.index_bar a:link{
+  color: black;
+}
+.index_bar a:visited{
+  color: black;
+}
+.index_bar a:hover{
+  color: red;
+}
+.index_bar a:active{
+  color: black;
+}
+/*搜索框----------------------------------------*/
+.serch{
+  display: block;
+  padding-left: 12em;
+}
+/*左右切换--------------------------------*/
+.big_banner_right_bar table tr td img{
+  width: 4em;
+  height: 4em;
+  background-color: rgba(182,176,176,0.2);
+  border-radius: 50%;
+}
+/*left导航栏hover*/
+/*容器div------------------------------*/
+#right_div1{
+   display: none;
+ }
+#right_div2{
+  display: none;
+
+}
+#right_div3{
+   display: none;
+
+ }
+#right_div4{
+  display: none;
+
+}
+#right_div5{
+  display: none;
+
+}
+#right_div6{
+  display: none;
+
+}
+/*------------内容Div-------------------------------------------------------------------------------*/
+#left_bar_li1:hover #right_div1{
+   width: 622px;
+   height: 445px;
+   position: absolute;
+   background: rgb(252,253,254);
+   float:right;
+   left:280px;
+   top:50px;
+   border-radius: 8px;
+   display: block;
+ }
+#left_bar_li2:hover #right_div2{
+  width: 240px;
+  height: 445px;
+  position: absolute;
+  background: rgb(252,253,254);
+  float:right;
+  left:280px;
+  top:50px;
+  border-radius: 8px;
+  display: block;
+}
+#left_bar_li3:hover #right_div3{
+  width: 240px;
+  height: 445px;
+  position: absolute;
+  background: rgb(252,253,254);
+  float:right;
+  left:280px;
+  top:50px;
+  border-radius: 8px;
+  display: block;
+}
+#left_bar_li4:hover #right_div4{
+  width: 900px;
+  height: 445px;
+  position: absolute;
+  background: rgb(252,253,254);
+  float:right;
+  left:280px;
+  top:50px;
+  border-radius: 8px;
+  display: block;
+}
+#left_bar_li5:hover #right_div5{
+  width: 900px;
+  height: 445px;
+  position: absolute;
+  background: rgb(252,253,254);
+  float:right;
+  left:280px;
+  top:50px;
+  border-radius: 8px;
+  display: block;
+}
+#left_bar_li6:hover #right_div6{
+  width: 240px;
+  height: 445px;
+  position: absolute;
+  background: rgb(252,253,254);
+  float:right;
+  left:280px;
+  top:50px;
+  border-radius: 8px;
+  display: block;
+}
+/*3、左边导航栏hover样式---------------------------------------------*/
+#left_bar_li1:hover #model_1{
+  width: 10em;
+  height: 4em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  background: #eeeeee;
+  padding: 3px;
+  border-radius: 5px;
+}
+#left_bar_li2:hover #model_2{
+   width: 10em;
+   height: 4em;
+   border-bottom: 1px solid #cccccc;
+   font-size: 14px;
+   background: #eeeeee;
+   padding: 3px;
+   border-radius: 5px;
+ }
+#left_bar_li3:hover #model_3{
+   width: 10em;
+   height: 4em;
+   border-bottom: 1px solid #cccccc;
+   font-size: 14px;
+   background: #eeeeee;
+   padding: 3px;
+   border-radius: 5px;
+ }
+#left_bar_li4:hover #model_4{
+  width: 10em;
+  height: 4em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  background: #eeeeee;
+  padding: 3px;
+  border-radius: 5px;
+}
+#left_bar_li5:hover #model_5{
+  width: 10em;
+  height: 4em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  background: #eeeeee;
+  padding: 3px;
+  border-radius: 5px;
+}
+#left_bar_li6:hover #model_6{
+  width: 10em;
+  height: 4em;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  background: #eeeeee;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+/*hover超链接样式--------------------------------------------------------------------------------------------------*/
+.content_list1 li a{
+  display: block;
+  width: 204px;
+  height: 80px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-right: 0;
+}
+.content_list1 li a:link{
+  background: rgb(252,253,254);
+}
+.content_list1 li a:visited{
+  background: rgb(252,253,254);
+}
+.content_list1 li a:hover{
+  background: #eeeeee;
+}
+.content_list1 li a:active{
+  background: rgb(252,253,254);
+}
+.content_list1 li a p{
+  float: left;
+  color: #777;
+  font-size: 13px;
+  margin-top: 30px;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content_list1 li a img{
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin: 12px 8px 0 6px;
+}
+
+
+/*中间导航----------------------------------------------------------------------------------------------------------*/
+.center_bar{
+  margin-left:150px;
+  z-index: 2;
+}
+/*第一块----------------------------------------*/
+.member{
+  position: absolute;
+  z-index: 10;
+}
+.member ul li{
+  float: left;
+  margin-left: 10px;
+}
+.member ul li div p a:link{
+  color: black;
+  text-decoration:none;
+}
+.member ul li div p a:visited{
+  color: black;
+  text-decoration:none;
+}
+.member ul li div p a:hover{
+  color: rgb(207,10,44);
+  text-decoration:none;
+}
+.member ul li div p a:active{
+  color: rgb(207,10,44);
+  text-decoration:none;
+}
+/*第二块-----------------------------------------------*/
+.chip{
+  position: absolute;
+  z-index: 10;
+}
+.chip ul li{
+  float: left;
+  margin-left: 50px;
+}
+.chip ul li a label p{
+margin-top: 5px;
+}
+.chip ul li a:link{
+  color: #848484;
+  text-decoration:none;
+}
+.chip ul li a:visited{
+  color: #848484;
+  text-decoration:none;
+}
+.chip ul li a:hover{
+  color: #de5b60;
+  text-decoration:none;
+}
+.chip ul li a:active{
+  color: #848484;
+  text-decoration:none;
+}
+/*第三块---------------------------------------------------*/
+.youhui ul li{
+  float: left;
+  margin-left: 25px;
+  width: 75px;
+}
+.youhui ul li a label p{
+  float: right;
+}
+.youhui ul li a:link{
+  color: #848484;
+  text-decoration:none;
+}
+.youhui ul li a:visited{
+  color: #848484;
+  text-decoration:none;
+}
+.youhui ul li a:hover{
+  color: #de5b60;
+  text-decoration:none;
+}
+.youhui ul li a:active{
+  color: #848484;
+  text-decoration:none;
+}
+/**/
+.phoneshow{
+  margin-left:150px;
+  z-index: 2;
+}
+.phoneshow ul li{
+  float: left;
+  margin-left: 10px;
+}
+.phoneshow ul li img{
+   border-radius: 8px;
+  transition: all .2s linear 0s;
+ }
+.phoneshow ul li:hover img{
+  box-shadow: 0 8px 36px rgba(0,0,0,0.1);
+}
+/*热销单品------------------------------------------------------------------------------------------------*/
+.rxdp{
+  margin-left:150px;
+  z-index: 2;
+}
+.rxdp ul li{
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.rxdp ul li a img{
+  width: 150px;
+  height: 150px;
+}
+.rxdp ul li {
+  width: 230px;
+  height: 290px;
+  background-color: rgb(249,249,249);
+  display: inline-block;
+  border-radius: 8px;
+  transition: all .2s linear 0s;
+}
+.rxdp ul li:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.rxdp ul li a img{
+  margin-left: 45px;
+  margin-top: 20px;
+}
+/*精品推荐---------------------------------------------------------------------------------------------------------*/
+.jptj{
+  margin-left:150px;
+  z-index: 2;
+}
+.jptj_li_div1{
+   width: 230px;
+   height: 241px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+ }
+.jptj_li_div1:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.jptj_li_div1 p{
+margin-top: 18px;
+}
+.jptj_li_div2{
+  width: 230px;
+  height: 41.6px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.jptj ul li{
+  float: left;
+  margin-left: 10px;
+}
+/*中部滚动广告*/
+.center_scroll_ad{
+  margin-left:150px;
+  z-index: 2;
+  background-color:red;
+  width: 1200px;
+  height: 120px;
+  position: absolute;
+  margin-top: 123em;
+  border-radius: 8px;
+}
+.center_scroll_ad div{
+  position: absolute;
+  top: 90px;
+  width: 250px;
+  height: 13px;
+  left: 940px;
+  text-align: right;
+}
+.center_scroll_ad div span{
+  border: white 1px solid;
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+.sj{
+  margin-left:150px;
+  z-index: 2;
+}
+/**/
+.sj_li_div1{
+  width: 230px;
+  height: 241px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+.sj_li_div1:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.sj_li_div1 p{
+  margin-top: 18px;
+}
+.sj_li_div2{
+  width: 230px;
+  height: 41.6px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.sj ul li{
+  float: left;
+  margin-left: 10px;
+}
+/*底部*/
+.buttom{
+  z-index: 2;
+}
+.last_ad{
+  margin-left:150px;
+  z-index: 2;
+}
+.buttom_top{
+  width: 1200px;
+  height: 80px;
+  margin-left:150px;
+  border-bottom: #cccccc 1px solid;
+}
+.buttom_top ul li{
+  float: left;
+  margin-left: 13px;
+  width: 290px;
+  margin-top: 20px;
+}
+.buttom_b{
+  width: 1200px;
+  height: 300px;
+  margin-left:150px;
+}
+.buttom_b_left{
+  width: 850px;
+  height: 180px;
+margin-top: 30px;
+  float: left;
+  border-right:solid 1px #cccccc;
+}
+.buttom_b_right{
+  width: 290px;
+  height: 185px;
+  margin-top: 25px;
+  display:inline-block;
+  margin-left: 40px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+.buttom_b_left ul li{
+  float: left;
+  margin-left: 65px;
+  margin-top: 10px;
+  color: black;
+  font-size: 15px;
+}
+.buttom_b_left ul li ul li{
+   float:none;
+  padding: 0;
+  margin: 0;
+  color: #cccccc;
+  font-size: 13px;
+  margin-top: 5px;
+ }
+.buttom_b_left ul li ul{
+  padding: 0;
+  margin: 0;
+}
+.buttom_b_left ul li ul li a:link{
+  color: #888888;
+text-decoration: none;
+}
+.buttom_b_left ul li ul li a:visited{
+  color: #888888;
+  text-decoration: none;
+}
+.buttom_b_left ul li ul li a:hover {
+  color: red;
+  text-decoration: none;
+}
+.buttom_b_left ul li ul li a:active{
+  color: #888888;
+  text-decoration: none;
+}
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+

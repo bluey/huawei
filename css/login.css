@@ -1,0 +1,58 @@
+.login_content{
+  margin-top: 150px;
+  height: 300px;
+  width: 100%;
+}
+
+.big_title{
+   display: inline-block;
+   font-size: 55px;
+   color: white;
+   margin-top: 50px;
+   margin-left: 100px;
+ }
+.big_title span{
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.login{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 90px;
+  left: 1000px;
+  background: white;
+  border:none;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.login p{
+  background: rgb(207,44,10);
+  display: inline-block;
+  width: 401px;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+}
+.login form{
+text-align: center;
+  margin-top: 70px;
+}
+.login input{
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+  border: #cccccc solid 1px;
+  font-size: 14px;
+  padding: 10px;
+}
+.login span{
+  float: left;
+  font-size: 13px;
+  color: #555555;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+

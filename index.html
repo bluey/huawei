@@ -1,0 +1,881 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>华为商城（VMALL.COM）</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<!-- Add your site or application content here -->
+
+<div class="main">
+  <!--顶部广告------------------------------------------------------------------------------------------------------->
+  <div class="topBanner">
+    <span style="position: absolute;text-align: right;display: inline-block;margin-left: 1400px;top:10px;" class="timmerlost" id="timmerlost" alt="">5s后广告关闭</span>
+    <img class="topBanner_img" src="img/topad.jpg">
+  </div>
+  <!--顶部导航栏--------------------------------------------------------------------------------------------------->
+  <div class="topBar">
+    <ul class="topBarUl">
+      <li><a href="index.html" class="topBarA">首页</a></li>
+      <li><a href="https://consumer.huawei.com/cn/" class="topBarA" target="_blank">华为官网</a></li>
+      <li><a href="http://www.honor.cn/" class="topBarA" target="_blank">荣耀官网</a></li>
+      <li><a href="https://club.huawei.com/" class="topBarA" target="_blank">花粉俱乐部</a></li>
+      <li><a href="https://www.vmall.com/priority" class="topBarA" target="_blank">V码(优购码)</a></li>
+      <li><a href="https://company.vmall.com/list.html" class="topBarA" target="_blank">企业购</a></li>
+      <li><a href="#" class="topBarA">Select Region</a></li>
+      <!--更多精彩下拉显示------------------------------------------------------------------------------------------>
+      <li class="dropdown" id="dropdown">更多精彩<img src="img/bottomdecoration.png">
+        <dl class="topBar-dropDown" id="topBar-dropdown">
+          <dt><a href="https://consumer.huawei.com/cn/emui/" target="_blank" class="topBarA">EMUI</a></dt>
+          <dt><a href="http://appstore.huawei.com/" target="_blank" class="topBarA">应用市场</a></dt>
+          <dt><a href="yun.html" target="_blank" class="topBarA">华为云</a></dt>
+          <dt><a href="https://developer.huawei.com/cn/" target="_blank" class="topBarA">开发者联盟</a></dt>
+        </dl>
+      </li>
+    </ul>
+    <ul class="topBarUlRight">
+      <li><a href="login.html" class="topBarA">请登录</a></li>
+      <li><a href="regist.html" class="topBarA">注册</a></li>
+      <li><a href="mybook.html" class="topBarA">我的订单</a></li>
+      <li><a href="server.html" class="topBarA">客户服务</a></li>
+      <!--网站导航下拉显示Div-->
+      <li><a href="#" class="topBarA">网站导航</a></li>
+      <li><a href="#" class="topBarA">手机版</a></li>
+      <li class="buycarli" id="buycarli"><a href="buycar.html" class="topBarA"><img class="buycarimg" src="img/buycar.png">购物车</a>
+      </li>
+    </ul>
+  </div>
+  <!--首页导航栏------------------------------------------------------------------------------------------------>
+  <div class="index_bar">
+    <ul>
+      <a href="index.html">
+        <li><img src="img/logo.png" style="width: 205px;height: 36px;"></li>
+      </a>
+      <a href="https://sale.vmall.com/huawei.html" target="_blank">
+        <li><img src="img/huaweiBarButton.png" style="width: 74px;height: 24;"></li>
+      </a>
+      <a href="https://sale.vmall.com/honor.html" target="_blank">
+        <li><img src="img/honorBarButton.png" style="width: 74px;height: 24;></li>
+      </a>
+      <a href="https://sale.vmall.com/pseries.html" target="_blank">
+        <li>华为P30</li>
+      </a>
+      <a href="https://www.vmall.com/product/10086244199203.html" target="_blank">
+        <li>荣耀20</li>
+      </a>
+      <a href="https://sale.vmall.com/hwmate.html" target="_blank">
+        <li>Mate 20系列</li>
+      </a>
+      <a href="https://www.vmall.com/product/10086134839130.html" target="_blank">
+        <li>荣耀V20</li>
+      </a>
+      <li class="serch">
+        <input type="text"
+               style="width: 20em;height: 1.8em;background: rgb(240,240,240);border-radius: 2em 0 0 2em;border: none;outline: none;padding-left: 5px;"
+               placeholder="请输入需要搜索的内容"/>
+        <img src="img/serch.png"
+             style="width: 2em;height: 1.8em;border: none;border-radius: 0 2em 2em 0;background-color: rgb(240,240,240);margin-left: -10px;margin-bottom: 3.8px;"/>
+      </li>
+    </ul>
+  </div>
+  <!--大广告banner------------------------------------------------------------------------------------------------>
+  <div class="big_ad" style="width: 100%;height: 550px;position: absolute;margin-top: 5em;">
+    <!--        <img id="big_banner_img" src="img/bigBanner%20(1).jpg" />-->
+    <!--         background-image: url('img/bigBanner%20(1).jpg');background-size: 100% 100%;-->
+    <div class="big_banner_ad">
+      <div class="big_banner_left_bar">
+        <ul>
+
+            <!--第一个模块-->
+            <li id="left_bar_li1">
+            <div class="left_bar_model" id="model_1">
+              <a href="#"><p class="left_bar_model_title">手机</p></a>
+              <p class="left_bar_model_des"><a href="#"><span>荣耀&nbsp;&nbsp;</span></a><a
+                href="#"><span>HUAWEI P系列</span></a></p>
+            </div>
+<!--hover显示1------------------------------------------------------------------------------------------------------>
+            <div class="right_div" id="right_div1">
+              <div class="content1" style="width: 612px;height: 420px;">
+              <ul class="content_list1" style="list-style: none;float: left;">
+                <li style="margin-top: 20px;">
+                  <a href="#">
+                    <img src="img/phone1.png" />
+                    <p>荣耀</p>
+                  </a>
+                </li>
+                <li style="margin-top: 25px;">
+                  <a href="#">
+                    <img src="img/phone2.png" />
+                    <p>HUAWEI P系列</p></a>
+                </li>
+                <li style="margin-top: 25px;">
+                  <a href="#">
+                    <img src="img/phone3.png" />
+                    <p>HUAWEI Mate系列</p></a>
+                </li>
+                <li style="margin-top: 25px;">
+                <a href="#">
+                  <img src="img/phone4.png" />
+                  <p>荣耀畅玩系列</p></a>
+              </li>
+              </ul>
+                <ul class="content_list1" style="list-style: none;float: left;margin-left: 10px;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/phone5.png" />
+                      <p>HUAWEI nova系列</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/phone6.png" />
+                      <p>华为畅享系列</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/phone7.png" />
+                      <p>HUAWEI 麦芒系列</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/phone8.png" />
+                      <p>移动4G+专区</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+         </li>
+
+            <!--第二个模块------------------------------------>
+          <li id="left_bar_li2">
+            <div class="left_bar_model" id="model_2">
+              <a href="#"><p class="left_bar_model_title">笔记本 & 平板电脑</p></a>
+              <p class="left_bar_model_des"><a href="#"><span>平板电脑&nbsp;&nbsp;</span></a><a href="#"><span>笔记本电脑</span></a>
+              </p>
+            </div>
+            <div class="right_div" id="right_div2">
+              <div class="content1">
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/compute1.png" />
+                      <p>平板电脑</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/compute2.png" />
+                      <p>笔记本电脑</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/compute3.png" />
+                      <p>笔记本配件</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div></li>
+
+            <!--第三个模块------------------------------------------------->
+          <li id="left_bar_li3">
+            <div class="left_bar_model" id="model_3">
+              <a href="#"><p class="left_bar_model_title">智能穿戴</p></a>
+              <p class="left_bar_model_des"><a href="#"><span>手表&nbsp;&nbsp;</span></a><a
+                href="#"><span>手环&nbsp;&nbsp;</span></a><a href="#"><span>VR</span></a></p>
+            </div>
+
+            <div class="right_div" id="right_div3">
+              <div class="content1">
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/watch1.png" />
+                      <p>手环</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/watch2.png" />
+                      <p>手表</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/watch3.png" />
+                      <p>VR</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div></li>
+
+            <!--第四个模块--------------------------------------------------->
+          <li id="left_bar_li4">
+            <div class="left_bar_model" id="model_4">
+              <a href="#"><p class="left_bar_model_title">智能家具</p></a>
+              <p class="left_bar_model_des"><a href="#"><span>路由器&nbsp;&nbsp;</span></a><a href="#"><span>电视盒子&nbsp;&nbsp;</span></a><a
+                href="#"><span>照明</span></a></p>
+            </div>
+            <div class="right_div" id="right_div4">
+              <div class="content1" style="width: 900px;height: 420px;">
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/ruter1.png" />
+                      <p>路由器</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter2.png" />
+                      <p>电视盒子</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter3.png" />
+                      <p>照明</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter4.png" />
+                      <p>清洁</p></a>
+                  </li>
+                </ul>
+                <ul class="content_list1" style="list-style: none;float: left;margin-left: 10px;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/ruter5.png" />
+                      <p>字母/分布式路由器</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter6.png" />
+                      <p>电力猫/WIFI放大器</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter7.png" />
+                      <p>随行WiFi</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter8.png" />
+                      <p>节能</p></a>
+                  </li>
+                </ul>
+                <ul class="content_list1" style="list-style: none;float: left;">
+                <li style="margin-top: 20px;">
+                  <a href="#">
+                    <img src="img/ruter9.png" />
+                    <p>环境</p>
+                  </a>
+                </li>
+                <li style="margin-top: 25px;">
+                  <a href="#">
+                    <img src="img/ruter10.png" />
+                    <p>安防</p></a>
+                </li>
+                <li style="margin-top: 25px;">
+                  <a href="#">
+                    <img src="img/ruter11.png" />
+                    <p>健康</p></a>
+                </li>
+                <li style="margin-top: 25px;">
+                  <a href="#">
+                    <img src="img/ruter12.png" />
+                    <p>厨电</p></a>
+                </li>
+              </ul>
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/ruter13.png" />
+                      <p>影音</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter14.png" />
+                      <p>卫浴</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/ruter15.png" />
+                      <p>其他</p></a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </li>
+
+            <!--第五个模块------------------------------------------------->
+          <li id="left_bar_li5">
+            <div class="left_bar_model" id="model_5">
+              <a href="#"><p class="left_bar_model_title">热销配件</p></a>
+              <p class="left_bar_model_des"><a href="#"><span>保护壳&nbsp;&nbsp;</span></a><a href="#"><span>移动电源&nbsp;&nbsp;</span></a><a
+                href="#"><span>耳机</span></a></p>
+            </div>
+            <div class="right_div" id="right_div5">
+              <div class="content1" style="width: 900px;height: 420px;">
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/case1.png" />
+                      <p>保护壳</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case2.jpg" />
+                      <p>移动电源</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case3.png" />
+                      <p>耳机</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case4.png" />
+                      <p>保护套</p></a>
+                  </li>
+                </ul>
+                <ul class="content_list1" style="list-style: none;float: left;margin-left: 10px;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/case5.png" />
+                      <p>贴膜</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case6.png" />
+                      <p>音箱</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case7.png" />
+                      <p>自拍杆/支架</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case8.png" />
+                      <p>充电器/线材</p></a>
+                  </li>
+                </ul>
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/case9.png" />
+                      <p>U盘/储存卡</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case10.png" />
+                      <p>摄像头/镜头</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case11.png" />
+                      <p>智能硬件</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case12.png" />
+                      <p>表带</p></a>
+                  </li>
+                </ul>
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/case13.png" />
+                      <p>生活周边</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case14.png" />
+                      <p>盒子专属配件</p></a>
+                  </li>
+                  <li style="margin-top: 25px;">
+                    <a href="#">
+                      <img src="img/case15.png" />
+                      <p>触控笔/取卡针</p></a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </li>
+
+            <!--第六个模块------------------------------------------------------>
+          <li id="left_bar_li6">
+            <div class="left_bar_model" id="model_6">
+              <a href="#"><p class="left_bar_model_title">增值服务 & 其他</p></a>
+              <p class="left_bar_model_des"><a href="#"><span>服务器&nbsp;&nbsp;</span></a><a href="#"><span>AI计算平台</span></a>
+              </p>
+            </div>
+            <div class="right_div" id="right_div6">
+              <div class="content1">
+                <ul class="content_list1" style="list-style: none;float: left;">
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/server1.png" />
+                      <p>服务器</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/server2.png" />
+                      <p>AI计算平台</p>
+                    </a>
+                  </li>
+                  <li style="margin-top: 20px;">
+                    <a href="#">
+                      <img src="img/server3.png" />
+                      <p>增值卡</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div></li>
+        </ul>
+      </div>
+
+      <div class="big_banner_right_bar" style="float: right;margin-bottom: 100px;margin-top: 15em;">
+        <table style="width: 65em;margin-right: 10em;">
+          <tr>
+            <td style="float: left;"><img id="left_logo" src="img/leftlogo.png" onclick="adchangeL()"></td>
+            <td style="float: right;"><img id="right_logo" src="img/rightlogo.png" onclick="adchangeR()"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--  中间导航------------------------------------------------------------------------------------------------------->
+  <div class="center_bar" style="background-color:white;width: 1200px;height: 88px;position: absolute;margin-top: 37em;border-radius: 10px;box-shadow: 0 2px 26px rgba(0,0,0,0.07);">
+    <!--      第一块----------------------------------------------------------------->
+    <div class="member">
+      <ul style="list-style: none;margin-top: 15px;margin-left: 10px;">
+        <li><img src="img/img_not_logged_in.png" style="width: 52px;height: 52px;"></li>
+        <li>
+          <div style="width: 147.34px;height: 50px;border-right: #a6a6a6 solid 1px;padding-right: 10px;">
+            <p><span style="color: #a6a6a6;">您好！请</span>&nbsp;&nbsp;<a href="#">登录</a>/<a href="#">注册</a></p>
+            <p style="margin-top: 5px;">
+              <a href="#"><span class="xrfl"
+                style="display: inline-block;width: 68px;height: 21px;text-align: center;line-height: 22px;background: #fff;color: #de5b60;border-radius: 5px;
+                font-size: 13px;border: #de5b60 1px solid;">新人福利</span></a>
+              <a href="#"><span class="hypd"
+                style="display: inline-block;width: 68px;height: 22px;text-align: center;line-height: 22px;background: #595454;
+                color: #fde4b3;border-radius: 5px;font-size: 13px;">会员频道</span></a>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--      第二块------------------------------------------------------------------->
+    <div class="chip" style="position: absolute;z-index: 10;margin-left: 15.5em;border-right: rgb(153,153,153) solid 1px;height: 88px;padding-right: 50px;">
+      <ul style="list-style: none;font-size: 12px;text-align: center;margin-top: 10px;font-weight: 400;">
+        <!--第一项-------------------------------->
+        <li>
+          <a href="#">
+            <label>
+              <img src="img/cneter_icon1.png" style="width: 40px;height: 40px;" />
+              <p>企业购特惠</p>
+            </label>
+            </a>
+        </li>
+<!--        第二项---------------------------->
+        <li>
+          <a href="#">
+            <label>
+              <img src="img/cneter_icon2.png" style="width: 40px;height: 40px;" />
+              <p>以旧换新</p>
+            </label>
+            </a>
+        </li>
+<!--        第三项---------------------------->
+        <li>
+          <a href="#">
+            <label>
+              <img src="img/cneter_icon3.png" style="width: 40px;height: 40px;" />
+              <p>会员领券</p>
+            </label>
+            </a>
+        </li>
+<!--        第四项-------------------------->
+        <li>
+          <a href="#">
+            <label>
+              <img src="img/cneter_icon4.png" style="width: 40px;height: 40px;" />
+              <p>荣耀20</p>
+            </label>
+            </a>
+        </li>
+<!--        第五项------------------------------->
+        <li>
+          <a href="#">
+            <label>
+              <img src="img/cneter_icon5.png" style="width: 40px;height: 40px;" />
+              <p>荣耀数码</p>
+            </label>
+            </a>
+        </li>
+<!--        第六项------------------------------->
+        <li>
+          <a href="#">
+            <label>
+              <img src="img/cneter_icon6.png" style="width: 40px;height: 40px;" />
+              <p>华为数码</p>
+            </label>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <!--      第三块------------------------------------------------------------------->
+    <div class="member_chip" style="width: 300px;height: 88px;margin-left: 55.6em;">
+<!--      公告栏-------------------------->
+      <div class="gonggao" style="width: 300px;height: 36px;padding-left: 10px;padding-top: 8px;border-bottom: rgb(153,153,153) solid 1px; ">
+        <p ><span style="font-size: 14px;font-weight: bold;margin-right: 5px;" >公告:</span><span style="font-size: 12px;">nova5系列新机开启预热,高考生购机享好礼</span></p>
+      </div>
+<!--      会员优惠------------------------->
+      <div class="youhui" style="width: 300px;height: 31px;padding-top: 13px;">
+        <ul style="list-style: none;">
+          <li style="margin-left: 10px;"><a href="#"><label><img src="img/cneter_sicon1.png" style="width: 20px;height: 20px;float: left"><p style="font-size: 12px;">优购码</p></label></a></li>
+          <li><a href="#"><label><img src="img/cneter_sicon2.png" style="width: 20px;height: 20px;float: left"><p style="font-size: 12px;">实名认证</p></label></a></li>
+          <li><a href="#"><label><img src="img/cneter_sicon3.png" style="width: 20px;height: 20px;float: left"><p style="font-size: 12px;">补购保障</p></label></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="phoneshow" style="background-color:white;width: 1200px;height: 243px;position: absolute;margin-top: 43.5em;">
+    <ul style="list-style: none;">
+      <li style="margin-left: 0"><a href="#"><img src="img/phone_show%20(1).jpg"></a></li>
+      <li><a href="#"><img src="img/phone_show%20(2).jpg"></a></li>
+      <li><a href="#"><img src="img/phone_show%20(3).jpg"></a></li>
+      <li><a href="#"><img src="img/phone_show%20(4).png"></a></li>
+    </ul>
+</div>
+  <div class="rxdp" style="background-color:white;width: 1200px;height: 680px;position: absolute;margin-top: 57em;">
+    <h2 style="font-size: 26px;color: #333;padding: 27px 0 0px 0;font-weight: normal">热销单品</h2>
+    <div style="float: left;"> <a href="#"><img src="img/left_big.png" style="border-radius: 8px;margin-top: 10px;"></a></div>
+    <ul style="margin-left: 10px;">
+      <li><a href="xq.html"><img src="img/rxdp_p1.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">荣耀V20</span>
+        <br><span style="font-size: 12px;color: #cccccc">限时优惠600元</span>
+        <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥2399</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p2.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">HUAWEI Mate 20 Pro</span>
+          <br><span style="font-size: 12px;color: #cccccc">领券减200|享6期免息</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥5499</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p3.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">荣耀8X</span>
+          <br><span style="font-size: 12px;color: #cccccc">优惠200</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥1199</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p4.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">华为畅享9</span>
+          <br><span style="font-size: 12px;color: #cccccc">最高优惠150</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥849</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p5.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">荣耀10青春版</span>
+          <br><span style="font-size: 12px;color: #cccccc">最高优惠400</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥1099</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p6.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">HUAWEI Mate 20</span>
+          <br><span style="font-size: 12px;color: #cccccc">限时优惠600元</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥2399</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p7.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">荣耀10</span>
+          <br><span style="font-size: 12px;color: #cccccc">最高优惠900元</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥1799</span>
+        </p>
+      </li>
+      <li><a href="#"><img src="img/rxdp_p8.png"></a>
+        <p style="text-align: center;margin-top: 15px;line-height: 22px">
+          <span style="color: black);font-size: 16px;font-weight: 500;">HUAWEI nova 4</span>
+          <br><span style="font-size: 12px;color: #cccccc">最高直降300</span>
+          <br><span style="color: rgb(208,2,7);font-size: 15px;font-weight: 600">￥2499</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+<!--  精品推荐------------------------------------------------------------------------------------------------>
+  <div class="jptj" style="background-color:white;width: 1200px;height: 350px;position: absolute;margin-top: 99em;">
+    <h2 style="font-size: 26px;color: #333;padding: 20px 0 7px 0;font-weight: normal">精品推荐</h2>
+    <ul style="margin-top: 20px;">
+      <li style="margin-left: 0;">
+        <div class="jptj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">618特惠</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/jptj_p1.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">2K全面屏笔记本</p>
+        </div>
+        <div class="jptj_li_div2" >
+          <p><span style="">HUAWEI  MateBook 13</span><br><span style="color: rgb(208,2,7); ">￥5699</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="jptj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">618特惠</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/jptj_p2.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">最高直降500+6期免息</p>
+        </div>
+        <div class="jptj_li_div2" >
+          <p><span style="">荣耀MagicBook</span><br><span style="color: rgb(208,2,7); ">￥4999</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="jptj_li_div1" >
+          <span style="background-color: #68BEFF;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">首发</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/jptj_p3.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">新品预售 限量赠礼</p>
+        </div>
+        <div class="jptj_li_div2" >
+          <p><span style="">华为mini 蓝牙音箱</span><br><span style="color: rgb(208,2,7); ">￥129</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="jptj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">618特惠预定</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/jptj_p4.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">9元抵209 赠197元配件</p>
+        </div>
+        <div class="jptj_li_div2" >
+          <p><span style="">【定金】荣耀平板5 10.1</span><br><span style="color: rgb(208,2,7); ">￥1399</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="jptj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">特惠</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/jptj_p5.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">最高直降300</p>
+        </div>
+        <div class="jptj_li_div2" >
+          <p><span style="">HUAWEI nova 4e</span><br><span style="color: rgb(208,2,7); ">￥1999</span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="center_scroll_ad" >
+    <img src="img/ad%20(1).jpg" style="border-radius: 8px;" id="ad_img">
+    <div>
+      <span id="img/ad%20(1).jpg"></span>
+      <span id="img/ad%20(2).jpg"></span>
+      <span id="img/ad%20(3).jpg"></span>
+      <span id="img/ad%20(4).jpg"></span>
+      <span id="img/ad%20(5).jpg"></span>
+      <span id="img/ad%20(6).jpg"></span>
+      <span id="img/ad%20(7).jpg"></span>
+    </div>
+  </div>
+  <div class="sj" style="background-color:white;width: 1200px;height: 350px;position: absolute;margin-top: 132em;">
+    <h2 style="font-size: 26px;color: #333;padding: 20px 0 7px 0;font-weight: normal">手机推荐</h2>
+    <ul style="margin-top: 20px;">
+      <li style="margin-left: 0;">
+        <div class="sj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">618特惠</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/sj5.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">最高优惠1700元</p>
+        </div>
+        <div class="sj_li_div2" >
+          <p><span style="">荣耀Magic2</span><br><span style="color: rgb(208,2,7); ">￥1499</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="sj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">爆款</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/sj2.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">领券立减200 享6期免息</p>
+        </div>
+        <div class="sj_li_div2" >
+          <p><span style="">HUAWEI Mate 20</span><br><span style="color: rgb(208,2,7); ">￥3499</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="sj_li_div1" >
+          <span style="background-color: #68BEFF;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">新品</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/sj7.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">购机赠耳机</p>
+        </div>
+        <div class="sj_li_div2" >
+          <p><span style="">华为麦芒8</span><br><span style="color: rgb(208,2,7); ">￥1899</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="sj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">618特惠</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/sj5.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">32G限时直降200</p>
+        </div>
+        <div class="sj_li_div2" >
+          <p><span style="">华为畅享9</span><br><span style="color: rgb(208,2,7); ">￥799</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="sj_li_div1" >
+          <span style="background-color: #FF6A6E;display: inline-block;padding: 0 9px;margin: 0 auto;line-height: 23px;color: #fff;border-radius: 0 0 6px 6px;">直降</span>
+          <p style=""><img style="width: 150px;height: 150px;" src="img/sj6.png"></p>
+          <p style="font-size: 14px;border-radius: 0 0 10px 10px;background: #f3f3f3;color: #777;margin-top: 15px;line-height: 36px;">限时优惠300</p>
+        </div>
+        <div class="sj_li_div2" >
+          <p><span style="">HUAWEI nova 4</span><br><span style="color: rgb(208,2,7); ">￥2799</span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="last_ad" style="background:url(img/new.jpg);background-repeat:no-repeat;width: 1200px;height: 350px;position: absolute;margin-top: 160em;">
+
+  </div>
+  <div class="buttom" style="background-color:rgb(249,249,249);width: 100%;height: 400px;position: absolute;margin-top: 175em;">
+  <div class="buttom_top">
+  <ul>
+    <li style="margin-left: 0;">
+      <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+        <img src="img/buttomicon1.png" style="width:30px;height: 30px; ">
+      </p>
+      <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">百强企业 品质保证</p>
+    </li>
+    <li>
+      <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+        <img src="img/buttomicon2.png" style="width:30px;height: 30px; ">
+      </p>
+      <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">7天退货 15天换货</p>
+    </li>
+    <li>
+      <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+        <img src="img/buttomicon3.png" style="width:30px;height: 30px; ">
+      </p>
+      <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">48元起免运费</p>
+    </li>
+    <li>
+      <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+        <img src="img/buttomicon4.png" style="width:30px;height: 30px; ">
+      </p>
+      <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">1000家维修网点 全国联保</p>
+    </li>
+  </ul>
+  </div>
+    <div class="buttom_b">
+      <div class="buttom_b_left">
+        <ul>
+          <li style="margin-left: 0;">购物相关
+          <ul>
+            <li><a href="#">购物指南</a></li>
+            <li><a href="#">配送方式</a></li>
+            <li><a href="#">支付方式</a></li>
+            <li><a href="#">常见问题</a></li>
+          </ul>
+          </li>
+          <li>保修与退换货
+            <ul>
+              <li><a href="#">保修政策</a></li>
+              <li><a href="#">退换货政策</a></li>
+              <li><a href="#">退换货流程</a></li>
+              <li><a href="#">保修状态查询</a></li>
+              <li><a href="#">配件防伪查询</a></li>
+            </ul>
+          </li>
+          <li>维修与技术支持
+            <ul>
+              <li><a href="#">售后网点</a></li>
+              <li><a href="#">预约维修</a></li>
+              <li><a href="#">手机寄修</a></li>
+              <li><a href="#">备件价格查询</a></li>
+              <li><a href="#">上门服务</a></li>
+            </ul>
+          </li>
+          <li>特色服务
+            <ul>
+              <li><a href="#">防伪查询</a></li>
+              <li><a href="#">补购保障</a></li>
+              <li><a href="#">以旧换新</a></li>
+              <li><a href="#">礼品包装</a></li>
+            </ul></li>
+          <li>关于我们
+            <ul>
+              <li><a href="#">公司介绍</a></li>
+              <li><a href="#">华为商城简介</a></li>
+              <li><a href="#">华为线下门店</a></li>
+              <li><a href="#">荣耀线下门店</a></li>
+              <li><a href="#">诚征英才</a></li>
+              <li><a href="#">意见反馈</a></li>
+            </ul>
+          </li>
+          <li>友情链接
+            <ul>
+              <li><a href="#">华为集团</a></li>
+              <li><a href="#">华为CBG官网</a></li>
+              <li><a href="#">荣耀官网</a></li>
+              <li><a href="#">花粉俱乐部</a></li>
+              <li><a href="#">华为云</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <div class="buttom_b_right">
+        <p style="font-size: 22px;font-weight: bold;color: #333333;text-align: center;padding-bottom: 15px;">400-088-6888</p>
+        <p style="font-size: 16px;color: #333333;text-align: center;padding-bottom: 40px;">7x24小时客服热线（仅收市话费）</p>
+          <a href="#" style="color: white;text-decoration: none;" >
+          <p style="text-align: center;width: 173px;height: 32px;background: #333333;border-radius: 20px;padding-top: 6px;margin-left: 70px;">
+            <img src="img/server.png" style="width: 20px;height: 20px;">
+          <span style="font-size: 14px;margin-left: 5px;">在线客服</span>
+          </p>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+
+</html>

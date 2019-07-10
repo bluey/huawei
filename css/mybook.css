@@ -1,0 +1,157 @@
+.mylogin{
+  width: 100%;
+  height: 1010px;
+  position: absolute;
+  top:110px;
+}
+.left{
+  background: rgb(252,253,254);
+  margin-left: 120px;
+  margin-top: 60px;
+  height: 860px;
+  width: 200px;
+  float: left;
+  border-radius: 15px;
+  border: #ddd solid 3px;
+}
+.right{
+
+  float: left;
+  margin-left: 50px;
+  margin-top: 60px;
+  height: 860px;
+  width: 1050px;
+}
+.left ul{
+  width: 200px;
+  border-bottom: #ccc solid 1px;
+}
+
+.left ul li:first-child{
+  font-size: 17px;
+  color: #222222;
+  margin-left: 20px;
+  width: 180px;
+  font-weight:600;
+
+}
+.left ul li{
+  font-size: 15px;
+  color: #848484;
+  margin-left: 20px;
+  width: 180px;
+  margin-top: 10px;
+}
+.left ul li:last-child{
+  font-size: 15px;
+  color: #848484;
+  margin-left: 20px;
+  width: 180px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.left ul li a:link{
+  text-decoration: none;
+  color:#777;
+}
+.left ul li a:visited{
+  text-decoration: none;
+  color:#777;
+}
+.left ul li a:hover{
+  text-decoration: none;
+  color:red;
+}
+.left ul li a:active{
+  text-decoration: none;
+  color:#777;
+}
+.right_title{
+  width: 1050px;
+  height: 51px;
+  border-bottom: #cccccc solid 1px;
+}
+.right_title span:first-child{
+  float: left;
+  color: #3a3a3a;
+  font-size: 24px;
+  margin-top: 8px;
+}
+.right_title span{
+  float: right;
+  color: #3a3a3a;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.choices{
+  width: 940px;
+  height: 75px;
+
+}
+.choices ul li:first-child{
+  width: 120px;
+  height: 24px;
+  background: #2d2d2d;
+  color: white;
+  margin-right: 10px;
+  padding: 5px 13px;
+  text-align: center;
+  margin-top: 20px;
+  float: left;
+  cursor:pointer;
+}
+.choices ul li{
+   width: 74px;
+   height: 24px;
+   background: #f2f2f2;
+   margin-right: 10px;
+   padding: 5px 13px;
+   margin-top: 20px;
+   float: left;
+   text-align: center;
+ }
+.choices ul li:hover{
+  background: #2d2d2d;
+  color: white;
+  cursor:pointer;
+}
+.mytable thead tr th{
+  font-size: 14px;
+  color: #888;
+  height: 14px;
+  line-height: 14px;
+  *line-height: 1.2;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+.mytable thead tr th:first-child{
+  font-size: 14px;
+  color: #888;
+  height: 14px;
+  line-height: 14px;
+  *line-height: 1.2;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  width: 502px;
+}
+.mytable tbody tr td{
+  text-align: center;
+  height: 30px;
+  padding: 5px 0 5px 0;
+  border: #cccccc solid 1px;
+
+}
+.mytable tbody tr td span:first-child:hover{
+  color: red;
+  cursor:pointer;
+}
+.mytable tbody tr td span:last-child:hover{
+  color: red;
+  cursor:pointer;
+}

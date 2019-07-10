@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/regist.css">
+  <link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+    <meta name="theme-color" content="#fafafa">
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/regist.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<!-- Add your site or application content here -->
+
+<div class="main">
+
+    <div class="topBar">
+        <ul class="topBarUl">
+            <li><a href="index.html" class="topBarA">首页</a></li>
+            <li><a href="#" class="topBarA">华为官网</a></li>
+            <li><a href="#" class="topBarA">荣耀官网</a></li>
+            <li><a href="#" class="topBarA">花粉俱乐部</a></li>
+            <li><a href="#" class="topBarA">V码(优购码)</a></li>
+            <li><a href="#" class="topBarA">企业购</a></li>
+            <li><a href="#" class="topBarA">Select Region</a></li>
+            <!--更多精彩下拉显示-->
+            <li class="dropdown" id="dropdown">更多精彩<img src="img/bottomdecoration.png">
+                <dl class="topBar-dropDown" id="topBar-dropdown">
+                    <dt><a href="#" class="topBarA">EMUI</a></dt>
+                    <dt><a href="#" class="topBarA">应用市场</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                </dl>
+            </li>
+        </ul>
+        <ul class="topBarUlRight">
+            <li><a href="login.html" class="topBarA">请登录</a></li>
+            <li><a href="regist.html" class="topBarA">注册</a></li>
+            <li><a href="mybook.html" class="topBarA">我的订单</a></li>
+            <li><a href="server.html" class="topBarA">客户服务</a></li>
+            <!--网站导航下拉显示Div-->
+            <li><a href="#" class="topBarA">网站导航</li>
+            <li><a href="#" class="topBarA">手机版</a></li>
+            <li class="buycarli" id="buycarli"><a href="buycar.html" class="topBarA"><img class="buycarimg" src="img/buycar.png">购物车</a></li>
+        </ul>
+    </div>
+  <div class="head_top">
+      <p><img src="img/head-top.png"></p>
+  </div>
+
+  <div class="regist_form">
+    <h1 style="text-align: center;">用户注册</h1>
+    <h4 style="color: orangered;text-align: center;" class="tips">提示内容</h4>
+       <form autocomplete="on" class="myform">
+         <p><span>用户名：</span><input class="username" type="text" pattern="[A-Za-z][0-9]{7,15}" required="required" title="请输入字母开的9-16位用户名"/></p>
+         <p><span>密码：</span><input class="password" type="password" pattern="[a-zA-Z0-9]{6,}" required="required" title="请输入字6位以上的密码"/></p>
+         <p><span>确认密码：</span><input class="repass" type="password" pattern="[a-zA-Z0-9]{6,}" required="required" title="请输入字6位以上的密码"/></p>
+       <p><span>姓名：</span><input type="text" pattern="[\u4e00-\u9fa5]{2,8}" required="required" title="姓名为2-8个汉字"/></p>
+         <p><span>姓别：</span><input style="height:10px;width:20px;padding-top:10px;border: 1px solid #666666;margin-left: 20px;" type="radio" value="男" name="sexradio"/>  男
+           <input style="height:10px;width:20px;padding-top:10px;border: 1px solid #666666;margin-left: 20px;" type="radio" value="女" name="sexradio"/>  女</p>
+         <p><span>电话：</span><input type="tel" class="tel" pattern="[1][3-9]{2}[0-9]{8}" required="required" title="请输入11位电话号码"/></p>
+         <p><span>出生年月:</span><input type="date" required="required"/></p>
+         <p><span>邮箱：</span><input type="email" required="required" /></p>
+       <p style="width: auto;margin-left: 190px;"><input type="submit" class="submit" style="border-radius: 8px;width: 189px;" value="提交"></p>
+     </form>
+  </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>我的订单</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mybook.css">
+    <meta name="theme-color" content="#fafafa">
+  <link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mybook.js"></script>
+
+</head>
+
+<body>
+<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<!-- Add your site or application content here -->
+
+<div class="main">
+    <div class="topBar">
+        <ul class="topBarUl">
+            <li><a href="index.html" class="topBarA">首页</a></li>
+            <li><a href="#" class="topBarA">华为官网</a></li>
+            <li><a href="#" class="topBarA">荣耀官网</a></li>
+            <li><a href="#" class="topBarA">花粉俱乐部</a></li>
+            <li><a href="#" class="topBarA">V码(优购码)</a></li>
+            <li><a href="#" class="topBarA">企业购</a></li>
+            <li><a href="#" class="topBarA">Select Region</a></li>
+            <!--更多精彩下拉显示-->
+            <li class="dropdown" id="dropdown">更多精彩<img src="img/bottomdecoration.png">
+                <dl class="topBar-dropDown" id="topBar-dropdown">
+                    <dt><a href="#" class="topBarA">EMUI</a></dt>
+                    <dt><a href="#" class="topBarA">应用市场</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                </dl>
+            </li>
+        </ul>
+        <ul class="topBarUlRight">
+            <li><a href="login.html" class="topBarA">请登录</a></li>
+            <li><a href="regist.html" class="topBarA">注册</a></li>
+            <li><a href="mybook.html" class="topBarA">我的订单</a></li>
+            <li><a href="server.html" class="topBarA">客户服务</a></li>
+            <!--网站导航下拉显示Div-->
+          <li><a href="#" class="topBarA">网站导航</a></li>
+            <li><a href="#" class="topBarA">手机版</a></li>
+            <li class="buycarli" id="buycarli"><a href="buycar.html" class="topBarA"><img class="buycarimg"
+                                                                                  src="img/buycar.png">购物车</a></li>
+        </ul>
+    </div>
+  <div class="index_bar">
+    <ul>
+      <a href="index.html">
+        <li><img src="img/logo.png" style="width: 205px;height: 36px;"></li>
+      </a>
+      <a href="https://sale.vmall.com/huawei.html" target="_blank">
+        <li><img src="img/huaweiBarButton.png" style="width: 74px;height: 24;"></li>
+      </a>
+      <a href="https://sale.vmall.com/honor.html" target="_blank">
+        <li><img src="img/honorBarButton.png" style="width: 74px;height: 24;></li>
+      </a>
+      <a href="https://sale.vmall.com/pseries.html" target="_blank">
+        <li>华为P30</li>
+      </a>
+      <a href="https://www.vmall.com/product/10086244199203.html" target="_blank">
+        <li>荣耀20</li>
+      </a>
+      <a href="https://sale.vmall.com/hwmate.html" target="_blank">
+        <li>Mate 20系列</li>
+      </a>
+      <a href="https://www.vmall.com/product/10086134839130.html" target="_blank">
+        <li>荣耀V20</li>
+      </a>
+      <li class="serch">
+        <input type="text"
+               style="width: 20em;height: 1.8em;background: rgb(240,240,240);border-radius: 2em 0 0 2em;border: none;outline: none;padding-left: 5px;"
+               placeholder="请输入需要搜索的内容"/>
+        <img src="img/serch.png"
+             style="width: 2em;height: 1.8em;border: none;border-radius: 0 2em 2em 0;background-color: rgb(240,240,240);margin-left: -10px;margin-bottom: 3.8px;"/>
+      </li>
+    </ul>
+  </div>
+  <div class="mylogin">
+      <div class="left">
+        <ul style="border: none;">
+          <h1 STYLE="color: rgb(270,10,44);font-size: 20px;font-weight: 600;display: inline-block;width: 180px;padding-left: 20px;border-bottom: #ccc solid 1px;padding-bottom: 15px">我的商城</h1>
+        </ul>
+        <ul>
+        <li>我的消息</li>
+        <li><a href="#">消息中心</a></li>
+        <li><a href="#">营销消息订阅</a></li>
+      </ul>
+        <ul>
+        <li>我的订单</li>
+        <li><a href="#">我的订单</a></li>
+        <li><a href="#">我的退换货</a></li>
+        <li><a href="#">我的退款</a></li>
+        <li><a href="#">我的回收单</a></li>
+        <li><a href="#">商品评价</a></li>
+      </ul>
+        <ul>
+          <li>我的资产</li>
+          <li><a href="#">我的积分</a></li>
+          <li><a href="#">我的优惠券</a></li>
+          <li><a href="#">我的代金券</a></li>
+          <li><a href="#">我的花瓣</a></li>
+          <li><a href="#">等级与特权</a></li>
+        </ul>
+        <ul>
+        <li>购买支持</li>
+        <li><a href="#">收货地址管理</a></li>
+        <li><a href="#">实名认证</a></li>
+        <li><a href="#">我的预约</a></li>
+        <li><a href="#">到货通知</a></li>
+        <li><a href="#">我的优享购</a></li>
+      </ul>
+        <ul style="border: none">
+          <li style="  font-size: 17px;color: #222222;margin-left: 20px;width: 180px;font-weight:600;">帮助中心</li>
+        </ul>
+      </div>
+<!--    右边未完成部分------------------------------------------------------------------------------------------------->
+      <div class="right" >
+        <div class="right_title"><span>我的订单</span><span>最近6月内订单</span><span>六月前订单</span></div>
+        <div class="choices">
+          <ul>
+            <li>全部有效订单</li>
+            <li>待支付</li>
+            <li>待评价</li>
+            <li>待收货</li>
+            <li>已完成</li>
+            <li>已取消</li>
+            <li id="add">添加订单</li>
+          </ul>
+        </div>
+        <table cellpadding="0" cellspacing="0" border="0" width="942px" class="mytable" id="mytable">
+          <thead>
+          <tr style="background: #fafafa;">
+            <th>商品</th>
+            <th>单价/元</th>
+            <th>数量</th>
+            <th>实付款</th>
+            <th>订单状态及操作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>HUAWEI nova 5 Pro 8GB+128GB 全网通版</td>
+            <td>2999.00</td>
+            <td>1</td>
+            <td>2999.00</td>
+            <td><span>编辑</span>/<span>删除</span></td>
+          </tr>
+          </tbody>
+
+        </table>
+      </div>
+<!--    右边未完成部分------------------------------------------------------------------------------------------------->
+  </div>
+  <div class="buttom" style="background-color:rgb(249,249,249);width: 100%;height: 400px;position: absolute;margin-top: 1050px;">
+    <div class="buttom_top">
+      <ul>
+        <li style="margin-left: 0;">
+          <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+            <img src="img/buttomicon1.png" style="width:30px;height: 30px; ">
+          </p>
+          <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">百强企业 品质保证</p>
+        </li>
+        <li>
+          <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+            <img src="img/buttomicon2.png" style="width:30px;height: 30px; ">
+          </p>
+          <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">7天退货 15天换货</p>
+        </li>
+        <li>
+          <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+            <img src="img/buttomicon3.png" style="width:30px;height: 30px; ">
+          </p>
+          <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">48元起免运费</p>
+        </li>
+        <li>
+          <p style="display: block;width: 40px;height: 35px;float: left;border: red solid 1px;border-radius: 50%;text-align: center;padding-top: 5px;">
+            <img src="img/buttomicon4.png" style="width:30px;height: 30px; ">
+          </p>
+          <p style="font-size: 20px;font-weight: 600; margin-left: 10px;display: inline-block;margin-top: 5px;">1000家维修网点 全国联保</p>
+        </li>
+      </ul>
+    </div>
+    <div class="buttom_b">
+      <div class="buttom_b_left">
+        <ul>
+          <li style="margin-left: 0;">购物相关
+            <ul>
+              <li><a href="#">购物指南</a></li>
+              <li><a href="#">配送方式</a></li>
+              <li><a href="#">支付方式</a></li>
+              <li><a href="#">常见问题</a></li>
+            </ul>
+          </li>
+          <li>保修与退换货
+            <ul>
+              <li><a href="#">保修政策</a></li>
+              <li><a href="#">退换货政策</a></li>
+              <li><a href="#">退换货流程</a></li>
+              <li><a href="#">保修状态查询</a></li>
+              <li><a href="#">配件防伪查询</a></li>
+            </ul>
+          </li>
+          <li>维修与技术支持
+            <ul>
+              <li><a href="#">售后网点</a></li>
+              <li><a href="#">预约维修</a></li>
+              <li><a href="#">手机寄修</a></li>
+              <li><a href="#">备件价格查询</a></li>
+              <li><a href="#">上门服务</a></li>
+            </ul>
+          </li>
+          <li>特色服务
+            <ul>
+              <li><a href="#">防伪查询</a></li>
+              <li><a href="#">补购保障</a></li>
+              <li><a href="#">以旧换新</a></li>
+              <li><a href="#">礼品包装</a></li>
+            </ul></li>
+          <li>关于我们
+            <ul>
+              <li><a href="#">公司介绍</a></li>
+              <li><a href="#">华为商城简介</a></li>
+              <li><a href="#">华为线下门店</a></li>
+              <li><a href="#">荣耀线下门店</a></li>
+              <li><a href="#">诚征英才</a></li>
+              <li><a href="#">意见反馈</a></li>
+            </ul>
+          </li>
+          <li>友情链接
+            <ul>
+              <li><a href="#">华为集团</a></li>
+              <li><a href="#">华为CBG官网</a></li>
+              <li><a href="#">荣耀官网</a></li>
+              <li><a href="#">花粉俱乐部</a></li>
+              <li><a href="#">华为云</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <div class="buttom_b_right">
+        <p style="font-size: 22px;font-weight: bold;color: #333333;text-align: center;padding-bottom: 15px;">400-088-6888</p>
+        <p style="font-size: 16px;color: #333333;text-align: center;padding-bottom: 40px;">7x24小时客服热线（仅收市话费）</p>
+        <a href="#" style="color: white;text-decoration: none;" >
+          <p style="text-align: center;width: 173px;height: 32px;background: #333333;border-radius: 20px;padding-top: 6px;margin-left: 70px;">
+            <img src="img/server.png" style="width: 20px;height: 20px;">
+            <span style="font-size: 14px;margin-left: 5px;">在线客服</span>
+          </p>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

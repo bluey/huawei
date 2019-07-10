@@ -1,0 +1,362 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/carts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buycar.css">
+
+    <meta name="theme-color" content="#fafafa">
+  <link rel="icon" href="img/favicon.ico" type="images/x-ico" />
+  <!--[if IE]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/carts.js"></script>
+</head>
+
+<body>
+
+<div class="main">
+    <div class="topBar">
+        <ul class="topBarUl">
+            <li><a href="index.html" class="topBarA">首页</a></li>
+            <li><a href="#" class="topBarA">华为官网</a></li>
+            <li><a href="#" class="topBarA">荣耀官网</a></li>
+            <li><a href="#" class="topBarA">花粉俱乐部</a></li>
+            <li><a href="#" class="topBarA">V码(优购码)</a></li>
+            <li><a href="#" class="topBarA">企业购</a></li>
+            <li><a href="#" class="topBarA">Select Region</a></li>
+            <!--更多精彩下拉显示-->
+            <li class="dropdown" id="dropdown">更多精彩<img src="img/bottomdecoration.png">
+                <dl class="topBar-dropDown" id="topBar-dropdown">
+                    <dt><a href="#" class="topBarA">EMUI</a></dt>
+                    <dt><a href="#" class="topBarA">应用市场</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                    <dt><a href="#" class="topBarA">华为终端云空间</a></dt>
+                </dl>
+            </li>
+        </ul>
+        <ul class="topBarUlRight">
+            <li><a href="login.html" class=" topBarA">请登录</a></li>
+            <li><a href="regist.html" class="topBarA">注册</a></li>
+            <li><a href="mybook.html" class="topBarA">我的订单</a></li>
+            <li><a href="server.html" class="topBarA">客户服务</a></li>
+            <!--网站导航下拉显示Div-->
+            <li><a href="#" class="topBarA">网站导航</li>
+            <li><a href="#" class="topBarA">手机版</a></li>
+            <li class="buycarli" id="buycarli"><a href="buycar.html" class="topBarA"><img class="buycarimg" src="img/buycar.png">购物车</a></li>
+        </ul>
+    </div>
+
+    <div class="buycar_content">
+      <section class="cartMain">
+        <div class="cartMain_hd">
+          <ul class="order_lists cartTop">
+            <li class="list_chk">
+              <!--所有商品全选-->
+              <input type="checkbox" id="all" class="whole_check">
+              <label for="all"></label>
+              全选
+            </li>
+            <li class="list_con">商品信息</li>
+            <li class="list_info">商品参数</li>
+            <li class="list_price">单价</li>
+            <li class="list_amount">数量</li>
+            <li class="list_sum">金额</li>
+            <li class="list_op">操作</li>
+          </ul>
+        </div>
+
+        <div class="cartBox">
+          <div class="shop_info">
+            <div class="all_check">
+              <!--全选-->
+              <input type="checkbox" id="shop_a" class="shopChoice">
+              <label for="shop_a" class="shop"></label>
+            </div>
+            <div class="shop_name">
+              品类：<a href="javascript:;">手机</a>
+            </div>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_2" class="son_check">
+                <label for="checkbox_2"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/1.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">HUAWEI nova 5i 6GB+128GB 全网通版（幻夜黑）</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：6.4英寸 </p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥1999</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥1999</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_3" class="son_check">
+                <label for="checkbox_3"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/2.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">荣耀V20 麒麟980 魅眼全视屏 4800万AI超清摄影 全网通6GB+128GB</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：6.4英寸</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥2599</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥2599</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_6" class="son_check">
+                <label for="checkbox_6"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/3.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">HUAWEI Mate 20 Pro (UD) 麒麟980 屏内指纹 8GB+128GB 全网通版（翡冷翠）</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：6.4英寸</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥5499</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥5499</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cartBox">
+          <div class="shop_info">
+            <div class="all_check">
+              <!--全选-->
+              <input type="checkbox" id="shop_b" class="shopChoice">
+              <label for="shop_b" class="shop"></label>
+            </div>
+            <div class="shop_name">
+              品类：<a href="javascript:;">电脑</a>
+            </div>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_4" class="son_check">
+                <label for="checkbox_4"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/4.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">【新品】荣耀MagicBook 2019 锐龙版 14英寸</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：14英寸</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥3999</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥3999</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_5" class="son_check">
+                <label for="checkbox_5"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/5.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">（华为）HUAWEI MateBook E 2019款</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：12英寸</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥3999</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥3999</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cartBox">
+          <div class="shop_info">
+            <div class="all_check">
+              <!--全选-->
+              <input type="checkbox" id="shop_c" class="shopChoice">
+              <label for="shop_c" class="shop"></label>
+            </div>
+            <div class="shop_name">
+              品类：<a href="javascript:;">智能家具</a>
+            </div>
+          </div>
+          <div class="order_content">
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_8" class="son_check">
+                <label for="checkbox_8"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/6.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">华为AI音箱mini（白色）</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：默认</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥229</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥229</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+            <ul class="order_lists">
+              <li class="list_chk">
+                <input type="checkbox" id="checkbox_9" class="son_check">
+                <label for="checkbox_9"></label>
+              </li>
+              <li class="list_con">
+                <div class="list_img"><a href="javascript:;"><img src="img/7.png" alt=""></a></div>
+                <div class="list_text"><a href="javascript:;">华为随行WiFi 2 畅享版（白色）</a></div>
+              </li>
+              <li class="list_info">
+                <p>规格：默认</p>
+                <p>尺寸：默认</p>
+              </li>
+              <li class="list_price">
+                <p class="price">￥349</p>
+              </li>
+              <li class="list_amount">
+                <div class="amount_box">
+                  <a href="javascript:;" class="reduce reSty">-</a>
+                  <input type="text" value="1" class="sum">
+                  <a href="javascript:;" class="plus">+</a>
+                </div>
+              </li>
+              <li class="list_sum">
+                <p class="sum_price">￥349</p>
+              </li>
+              <li class="list_op">
+                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+          <div class="bar-right">
+            <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+            <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+            <div class="calBtn"><a href="javascript:;">结算</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="model_bg"></section>
+      <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+      </section>
+
+    </div>
+</div>
+</body>
+
+</html>
